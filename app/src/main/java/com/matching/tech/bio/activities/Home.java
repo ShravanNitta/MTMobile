@@ -108,12 +108,12 @@ public class Home extends AppCompatActivity {
         menuInflater.inflate(R.menu.toolbar_menu, menu);
         MenuItem menuItem = menu.findItem(R.id.logout);
         applyFontToMenuItem(menuItem);
-        menuItem.setTitle( R.string.logout_lbl_en);
+        menuItem.setTitle("Logout");
         applyFontToMenuItem(menuItem);
 
         MenuItem menuItem_home = menu.findItem(R.id.home);
         applyFontToMenuItem(menuItem_home);
-        menuItem_home.setTitle(R.string.home_en);
+        menuItem_home.setTitle("Home");
         applyFontToMenuItem(menuItem_home);
         return true;
     }

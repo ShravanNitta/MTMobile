@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/yes"
                 android:textAllCaps="true"
-                android:text="@string/yes_en"
+                android:text="Yes"
                 android:textStyle="bold"
                 android:textColor="@color/confirmation_buttons"/>
             <TextView
@@ -48,7 +48,7 @@
                 android:id="@+id/no"
                 android:textAllCaps="true"
                 android:layout_marginLeft="40dp"
-                android:text="@string/no_en"
+                android:text="No"
                 android:textStyle="bold"
                 android:textColor="@color/confirmation_buttons"/>
 

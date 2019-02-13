@@ -97,7 +97,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/buttonshape_colorprimary"
-                android:text="@string/scan_en"
+                android:text="Scan"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="18sp" />

@@ -27,10 +27,7 @@ import java.io.FileOutputStream;
 import java.text.DateFormat;
 import java.text.Normalizer;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class Utilities {
 
@@ -55,7 +52,7 @@ public class Utilities {
     public Utilities(Activity parentActivity){
         this.parentActivity=parentActivity;
         progressDialog = new ProgressDialog(parentActivity);
-        progressDialog.setMessage(Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.please_wait):parentActivity.getResources().getString(R.string.please_wait_en));
+        progressDialog.setMessage(parentActivity.getResources().getString(R.string.please_wait));
         progressDialog.setCancelable(false);
     }
     /**
@@ -112,34 +109,34 @@ public class Utilities {
      * @return  it will return finger index .*/
     public int getFingerIndex(String value) {
         int fingerIndex=1;
-        if(value.equals(Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.right_thumb):parentActivity.getResources().getString(R.string.right_thumb_en))){
+        if(value.equals(parentActivity.getResources().getString(R.string.right_thumb))){
             fingerIndex = 1;
         }
-        if(value.equals(Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.right_index):parentActivity.getResources().getString(R.string.right_index_en))){
+        if(value.equals(parentActivity.getResources().getString(R.string.right_index))){
             fingerIndex = 2;
         }
-        if(value.equals(Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.right_middle):parentActivity.getResources().getString(R.string.right_middle_en))){
+        if(value.equals(parentActivity.getResources().getString(R.string.right_middle))){
             fingerIndex = 3;
         }
-        if(value.equals(Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.right_ring):parentActivity.getResources().getString(R.string.right_ring_en))){
+        if(value.equals(parentActivity.getResources().getString(R.string.right_ring))){
             fingerIndex = 4;
         }
-        if(value.equals(Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.right_little):parentActivity.getResources().getString(R.string.right_little_en))){
+        if(value.equals(parentActivity.getResources().getString(R.string.right_little))){
             fingerIndex = 5;
         }
-        if(value.equals(Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.left_thumb):parentActivity.getResources().getString(R.string.left_thumb_en))){
+        if(value.equals(parentActivity.getResources().getString(R.string.left_thumb))){
             fingerIndex = 6;
         }
-        if(value.equals(Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.left_index):parentActivity.getResources().getString(R.string.left_index_en))){
+        if(value.equals(parentActivity.getResources().getString(R.string.left_index))){
             fingerIndex = 7;
         }
-        if(value.equals(Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.left_middle):parentActivity.getResources().getString(R.string.left_middle_en))){
+        if(value.equals(parentActivity.getResources().getString(R.string.left_middle))){
             fingerIndex = 8;
         }
-        if(value.equals(Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.left_ring):parentActivity.getResources().getString(R.string.left_ring_en))){
+        if(value.equals(parentActivity.getResources().getString(R.string.left_ring))){
             fingerIndex = 9;
         }
-        if(value.equals(Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.left_little):parentActivity.getResources().getString(R.string.left_little_en))){
+        if(value.equals(parentActivity.getResources().getString(R.string.left_little))){
             fingerIndex = 10;
         }
         return fingerIndex ;
@@ -151,256 +148,47 @@ public class Utilities {
     public String getFingerMsg(int value) {
         String fingerMsg=null;
         if(value == 1){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.right_thumb):parentActivity.getResources().getString(R.string.right_thumb_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.right_thumb);
         }
         else if(value == 2){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.right_index):parentActivity.getResources().getString(R.string.right_index_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.right_index);
         }
         else if(value == 3){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.right_middle):parentActivity.getResources().getString(R.string.right_middle_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.right_middle);
         }
         else if(value == 4){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.right_ring):parentActivity.getResources().getString(R.string.right_ring_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.right_ring);
         }
         else if(value == 5){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.right_little):parentActivity.getResources().getString(R.string.right_little_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.right_little);
         }
         else if(value == 6){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.left_thumb):parentActivity.getResources().getString(R.string.left_thumb_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.left_thumb);
         }
         else if(value == 7){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.left_index):parentActivity.getResources().getString(R.string.left_index_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.left_index);
         }
         else if(value == 8){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.left_middle):parentActivity.getResources().getString(R.string.left_middle_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.left_middle);
         }
         else if(value == 9){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.left_ring):parentActivity.getResources().getString(R.string.left_ring_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.left_ring);
         }
         else if(value == 10){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.left_little):parentActivity.getResources().getString(R.string.left_little_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.left_little);
         }
         else if(value == 23){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.right_index_middle):parentActivity.getResources().getString(R.string.right_index_middle_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.right_index_middle);
         }
         else if(value == 78){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.left_index_middle):parentActivity.getResources().getString(R.string.left_index_middle_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.left_index_middle);
         }
         else if(value == 0){
-            fingerMsg = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.chooseFinger):parentActivity.getResources().getString(R.string.chooseFinger_en);
+            fingerMsg = parentActivity.getResources().getString(R.string.chooseFinger);
         }
         return fingerMsg ;
     }
-    /**
-     * loadIdTypes() method  will load Id types for enrollment ( in dropdown ).
-     * @return  it will return String array of id types.*/
-    public ArrayList<String> loadIdTypes(){
-        Map<String, String> idTypes = new LinkedHashMap<>();
-        ArrayList<String> idTypeArray = new ArrayList<String>();
-        idTypes.put("0", parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.prompt_id_type:R.string.prompt_id_type_en));
-        idTypes.put("1", parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.citizen:R.string.citizen_en));
-        idTypes.put("2", parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.resident:R.string.resident_en));
-        idTypes.put("3", parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.visitor:R.string.visitor_en));
-        idTypes.put("4", parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.illegal:R.string.illegal_en));
-        idTypes.put("5", parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.deportee:R.string.deportee_en));
-        idTypes.put("6", parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.pilgrim:R.string.pilgrim_en));
-        for (int i = 0; i < 7; i++) {
-            try {
-                idTypeArray.add(idTypes.get(String.valueOf(i)));
-            } catch (Exception e) {
-                LogUtils.debug(TAG,e.getMessage());
-            }
-        }
-        return idTypeArray;
-    }
-    public ArrayList<String> loadMorajaeIdTypes(){
-        Map<String, String> idTypes = new LinkedHashMap<>();
-        ArrayList<String> idTypeArray = new ArrayList<String>();
-        idTypes.put("0", parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.prompt_id_type:R.string.prompt_id_type_en));
-        idTypes.put("1", parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.id_number:R.string.id_number_en));
-        idTypes.put("2", parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.passport:R.string.passport_en));
-        for (int i = 0; i < 3; i++) {
-            try {
-                idTypeArray.add(idTypes.get(String.valueOf(i)));
-            } catch (Exception e) {
-                LogUtils.debug(TAG,e.getMessage());
-            }
-        }
-        return idTypeArray;
-    }
-    /**
-     * getErrorMessage(String errorCode) method will get the error messages( Arabic or english based on language)
-     * based on the error codes received from middleware.
-     * @param errorCode is the error code.
-     * @return it will return the error message based on the error code.*/
-    public String getErrorMessage(String errorCode){
-        String errorMessage = null;
-        switch (errorCode){
-            case "LOGIN_FROM_DIFFERENT_MACHINE_ERROR_CODE":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.LOGIN_FROM_DIFFERENT_MACHINE_ERROR_CODE):parentActivity.getResources().getString(R.string.LOGIN_FROM_DIFFERENT_MACHINE_ERROR_CODE_en);
-                break;
-            case "UNDEFINED_LOCATION_ERROR_CODE":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.UNDEFINED_LOCATION_ERROR_CODE):parentActivity.getResources().getString(R.string.UNDEFINED_LOCATION_ERROR_CODE_en);
-                break;
-            case "USER_NOTAUTHORIZED_AT_THIS_LOCATION":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.USER_NOTAUTHORIZED_AT_THIS_LOCATION):parentActivity.getResources().getString(R.string.USER_NOTAUTHORIZED_AT_THIS_LOCATION_en);
-                break;
-            case "USER_HAS_NO_LOCATION":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.USER_HAS_NO_LOCATION):parentActivity.getResources().getString(R.string.USER_HAS_NO_LOCATION_en);
-                break;
-            case "USER_HAS_NO_INFORMATION":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.USER_HAS_NO_INFORMATION):parentActivity.getResources().getString(R.string.USER_HAS_NO_INFORMATION_en);
-                break;
-            case "INVALID_CREDENTIALS":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.INVALID_CREDENTIALS):parentActivity.getResources().getString(R.string.INVALID_CREDENTIALS_en);
-                break;
-            case "USER_NOT_FOUND":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.USER_NOT_FOUND):parentActivity.getResources().getString(R.string.USER_NOT_FOUND_en);
-                break;
-            case "NOT_PERMITTED_TO_LOGIN_AT_THIS_TIME":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.NOT_PERMITTED_TO_LOGIN_AT_THIS_TIME):parentActivity.getResources().getString(R.string.NOT_PERMITTED_TO_LOGIN_AT_THIS_TIME_en);
-                break;
-            case "RESTRICTED_TO_SPECIFIC_MACHINES":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.RESTRICTED_TO_SPECIFIC_MACHINES):parentActivity.getResources().getString(R.string.RESTRICTED_TO_SPECIFIC_MACHINES_en);
-                break;
-            case "PASSWORD_EXPIRED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.PASSWORD_EXPIRED):parentActivity.getResources().getString(R.string.PASSWORD_EXPIRED_en);
-                break;
-            case "ACCOUNT_DISABLED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.ACCOUNT_DISABLED):parentActivity.getResources().getString(R.string.ACCOUNT_DISABLED_en);
-                break;
-            case "LDAP_ERROR_ACCOUNT_EXPIRED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.LDAP_ERROR_ACCOUNT_EXPIRED):parentActivity.getResources().getString(R.string.LDAP_ERROR_ACCOUNT_EXPIRED_en);
-                break;
-            case "USER_MUST_RESET_PASSWORD":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.USER_MUST_RESET_PASSWORD):parentActivity.getResources().getString(R.string.USER_MUST_RESET_PASSWORD_en);
-                break;
-            case "USER_CHANGE_PASSWORD_POLICY_REQUIREMENTS_FALED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.USER_CHANGE_PASSWORD_POLICY_REQUIREMENTS_FALED):parentActivity.getResources().getString(R.string.USER_CHANGE_PASSWORD_POLICY_REQUIREMENTS_FALED_en);
-                break;
-            case "FINGERPRINT_VERIFICATION_FAILED_A":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.FINGERPRINT_VERIFICATION_FAILED_A):parentActivity.getResources().getString(R.string.FINGERPRINT_VERIFICATION_FAILED_A_en);
-                break;
-            case "USER_HAS_NO_IP_ADDRESS":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.USER_HAS_NO_IP_ADDRESS):parentActivity.getResources().getString(R.string.USER_HAS_NO_IP_ADDRESS_en);
-                break;
-            case "UNUATHORIZED_ACCESS_ERROR_CODE":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.UNUATHORIZED_ACCESS_ERROR_CODE):parentActivity.getResources().getString(R.string.UNUATHORIZED_ACCESS_ERROR_CODE_en);
-                break;
-            case "INVALID_TOKEN_ERROR_CODE":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.INVALID_TOKEN_ERROR_CODE):parentActivity.getResources().getString(R.string.INVALID_TOKEN_ERROR_CODE_en);
-                break;
-            case "TOKEN_NOT_PROVIDED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.TOKEN_NOT_PROVIDED):parentActivity.getResources().getString(R.string.TOKEN_NOT_PROVIDED_en);
-                break;
-            case "INVALID_SAMIS_ID__NUMBER":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.INVALID_SAMIS_ID__NUMBER):parentActivity.getResources().getString(R.string.INVALID_SAMIS_ID__NUMBER_en);
-                break;
-            case "PERSON_INFORMATION_NOT_FOUND":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.PERSON_INFORMATION_NOT_FOUND):parentActivity.getResources().getString(R.string.PERSON_INFORMATION_NOT_FOUND_en);
-                break;
-            case "FACE_IMAGE_NOT_FOUND":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.FACE_IMAGE_NOT_FOUND):parentActivity.getResources().getString(R.string.FACE_IMAGE_NOT_FOUND_en);
-                break;
-            case "INVALID_OR_MISSING_FACE_IMAGE":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.INVALID_OR_MISSING_FACE_IMAGE):parentActivity.getResources().getString(R.string.INVALID_OR_MISSING_FACE_IMAGE_en);
-                break;
-            case "FACE_SEARCH_HAS_NO_HIT":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.FACE_SEARCH_HAS_NO_HIT):parentActivity.getResources().getString(R.string.FACE_SEARCH_HAS_NO_HIT_en);
-                break;
-            case "PERSON_INFORMATION_NOT_FOUND_FOR_HIT_RESULT":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.PERSON_INFORMATION_NOT_FOUND_FOR_HIT_RESULT):parentActivity.getResources().getString(R.string.PERSON_INFORMATION_NOT_FOUND_FOR_HIT_RESULT_en);
-                break;
-            case "AFFECTED_CRIMINAL_RECORD_NUMBERS_EXCEEDED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.AFFECTED_CRIMINAL_RECORD_NUMBERS_EXCEEDED):parentActivity.getResources().getString(R.string.AFFECTED_CRIMINAL_RECORD_NUMBERS_EXCEEDED_en);
-                break;
-            case "FINGERPRINT_VERIFICATION_FAILED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.FINGERPRINT_VERIFICATION_FAILED):parentActivity.getResources().getString(R.string.FINGERPRINT_VERIFICATION_FAILED_en);
-                break;
-            case "INVALID_FINGER_STRUCTURE":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.INVALID_FINGER_STRUCTURE):parentActivity.getResources().getString(R.string.INVALID_FINGER_STRUCTURE_en);
-                break;
-            case "NO_PERSON_INFORMATION_FOUND":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.NO_PERSON_INFORMATION_FOUND):parentActivity.getResources().getString(R.string.NO_PERSON_INFORMATION_FOUND_en);
-                break;
-            case "NO_FINGERPRINTS_FOUND_A":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.NO_FINGERPRINTS_FOUND_A):parentActivity.getResources().getString(R.string.NO_FINGERPRINTS_FOUND_A_en);
-                break;
-            case "NO_FINGERPRINTS_FOUND":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.NO_FINGERPRINTS_FOUND):parentActivity.getResources().getString(R.string.NO_FINGERPRINTS_FOUND_en);
-                break;
-            case "NO_STATUS_FOUND_FOR_INQUIRY_ID":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.NO_STATUS_FOUND_FOR_INQUIRY_ID):parentActivity.getResources().getString(R.string.NO_STATUS_FOUND_FOR_INQUIRY_ID_en);
-                break;
-            case "INVALID_FINGERPRINT_PRESENCE":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.INVALID_FINGERPRINT_PRESENCE):parentActivity.getResources().getString(R.string.INVALID_FINGERPRINT_PRESENCE_en);
-                break;
-            case "FACE_IMAGE_RESIZE_FAILED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.FACE_IMAGE_RESIZE_FAILED):parentActivity.getResources().getString(R.string.FACE_IMAGE_RESIZE_FAILED_en);
-                break;
-            case "FACE_IMAGE_SIZE_EXCEEDED_LIMIT":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.FACE_IMAGE_SIZE_EXCEEDED_LIMIT):parentActivity.getResources().getString(R.string.FACE_IMAGE_SIZE_EXCEEDED_LIMIT_en);
-                break;
-            case "FACE_IMAGE_COMPRESSION_FAILED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.FACE_IMAGE_COMPRESSION_FAILED):parentActivity.getResources().getString(R.string.FACE_IMAGE_COMPRESSION_FAILED_en);
-                break;
-            case "FACE_VERIFICATION_DOES_NOT_MATCH":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.FACE_VERIFICATION_DOES_NOT_MATCH):parentActivity.getResources().getString(R.string.FACE_VERIFICATION_DOES_NOT_MATCH_en);
-                break;
-            case "NO_FACE_IMAGE_FOUND":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.NO_FACE_IMAGE_FOUND):parentActivity.getResources().getString(R.string.NO_FACE_IMAGE_FOUND_en);
-                break;
-            case "FACE_VERIFICATION_NO_FACE":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.FACE_VERIFICATION_NO_FACE):parentActivity.getResources().getString(R.string.FACE_VERIFICATION_NO_FACE_en);
-                break;
-            case "FACE_VERIFICATION_MULTIPLE_FACES":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.FACE_VERIFICATION_MULTIPLE_FACES):parentActivity.getResources().getString(R.string.FACE_VERIFICATION_MULTIPLE_FACES_en);
-                break;
-            case "NO_DEAD_PERSON_INFO_FOUND":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.NO_DEAD_PERSON_INFO_FOUND):parentActivity.getResources().getString(R.string.NO_DEAD_PERSON_INFO_FOUND_en);
-                break;
-            case "DEAD_PERSON_ENROLLMENT_FAILED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.DEAD_PERSON_ENROLLMENT_FAILED):parentActivity.getResources().getString(R.string.DEAD_PERSON_ENROLLMENT_FAILED_en);
-                break;
-            case "DEAD_PERSON_NO_BARCODE_FOUND":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.DEAD_PERSON_NO_BARCODE_FOUND):parentActivity.getResources().getString(R.string.DEAD_PERSON_NO_BARCODE_FOUND_en);
-                break;
-            case "INVALID_DEAD_PERSON_JSON_STRUCTURE":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.INVALID_DEAD_PERSON_JSON_STRUCTURE):parentActivity.getResources().getString(R.string.INVALID_DEAD_PERSON_JSON_STRUCTURE_en);
-                break;
-            case "DEAD_PERSON_BARCODE_ID_ALREADY_EXIST":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.DEAD_PERSON_BARCODE_ID_ALREADY_EXIST):parentActivity.getResources().getString(R.string.DEAD_PERSON_BARCODE_ID_ALREADY_EXIST_en);
-                break;
-            case "PERMIT_EXPIRED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.PERMIT_EXPIRED):parentActivity.getResources().getString(R.string.PERMIT_EXPIRED_en);
-                break;
-            case "PERMIT_NOT_FOUND":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.PERMIT_NOT_FOUND):parentActivity.getResources().getString(R.string.PERMIT_NOT_FOUND_en);
-                break;
 
-            case "PERMIT_ALREADY_PROCESSED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.PERMIT_NOT_FOUND):parentActivity.getResources().getString(R.string.PERMIT_NOT_FOUND_en);
-                break;
-            case "THIS_OPERATOR_REGISTER_TO_ANOTHER_SECTOR":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.PERMIT_NOT_FOUND):parentActivity.getResources().getString(R.string.PERMIT_NOT_FOUND_en);
-                break;
-            case "NO_PERMISSION_ON_THIS_SECTORS":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.PERMIT_NOT_FOUND):parentActivity.getResources().getString(R.string.PERMIT_NOT_FOUND_en);
-                break;
-            case "PERSON_INFORMATION_NOT_ENTERED":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.PERMIT_NOT_FOUND):parentActivity.getResources().getString(R.string.PERMIT_NOT_FOUND_en);
-                break;
-            case "UNKNOWN":
-                errorMessage = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.UNKNOWN):parentActivity.getResources().getString(R.string.UNKNOWN_en);
-                break;
-        }
-
-        return errorMessage;
-    }
-    /**
-     * getTypeFace(String type) method will get the Typeface to set font for the text.
-     * @param type is the font style.
-     * @return it will return the Typeface object.*/
     public Typeface getTypeFace(String type){
         Typeface tf = Typeface.createFromAsset(parentActivity.getAssets(), "fonts/Cairo/Cairo-Regular.ttf");
         switch (type){
@@ -770,47 +558,6 @@ public class Utilities {
         return  difference;
     }
 
-    public String getICAOMessage(String code){
-        String  message = null;
-        switch(code){
-            case "NO_FACE_DETECTED":
-                message  = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.NO_FACE_DETECTED):parentActivity.getResources().getString(R.string.NO_FACE_DETECTED_en);
-                break;
-            case "YAW_ERROR":
-                message  = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.YAW_ERROR):parentActivity.getResources().getString(R.string.YAW_ERROR_en);
-                break;
-            case "PITCH_ERROR":
-                message  = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.PITCH_ERROR):parentActivity.getResources().getString(R.string.PITCH_ERROR_en);
-                break;
-            case "ROLL_ERROR":
-                message  = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.ROLL_ERROR):parentActivity.getResources().getString(R.string.ROLL_ERROR_en);
-                break;
-            case "SHADOW_ERROR":
-                message  = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.SHADOW_ERROR):parentActivity.getResources().getString(R.string.SHADOW_ERROR_en);
-                break;
-            case "RIGHT_EYE_CLOSED":
-                message  = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.RIGHT_EYE_CLOSED):parentActivity.getResources().getString(R.string.RIGHT_EYE_CLOSED_en);
-                break;
-            case "LEFT_EYE_CLOSED":
-                message  = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.LEFT_EYE_CLOSED):parentActivity.getResources().getString(R.string.LEFT_EYE_CLOSED_en);
-                break;
-            case "EYE_GAZE_ERROR":
-                message  = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.EYE_GAZE_ERROR):parentActivity.getResources().getString(R.string.EYE_GAZE_ERROR_en);
-                break;
-            case "MULTIPLE_FACES_DETECTED":
-                message  = Constants.AR.equalsIgnoreCase(language)?parentActivity.getResources().getString(R.string.MULTIPLE_FACES_DETECTED):parentActivity.getResources().getString(R.string.MULTIPLE_FACES_DETECTED_en);
-                break;
-
-        }
-        return message;
-    }
-    /**
-     * buildConfirmationDialog(String title,String message,String language) method will build Confirmation dialog with title and message and return.
-     * @param title is the title of the dialog.
-     * @param message is the body of the dialog.
-     * @param language is the user selected language.
-     * @return it will return Dialog object.*/
-
     public View buildConfirmationDialog(String title,String message,String language){
         LayoutInflater inflater = parentActivity.getLayoutInflater();
         View dialogView = inflater.inflate(Constants.AR.equalsIgnoreCase(language)?R.layout.confirmation_dialog:R.layout.confirmation_dialog_en, null);
@@ -951,28 +698,5 @@ public class Utilities {
         } catch (Exception e) {
             return inputNumber;
         }
-    }
-    /**
-     * getActionMessage(String id) method is used to get the action message based on the action id.
-     * @param id is the action id.
-     * @return  it will return the action message.*/
-    public String getActionMessage(String id){
-        String action = "";
-        switch (id){
-            case "1":
-                action = parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.action1:R.string.action1_en);
-                break;
-            case "2":
-                action = parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.action2:R.string.action2_en);
-                break;
-            case "3":
-                action = parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.action3:R.string.action3_en);
-                break;
-            case "4":
-                action = parentActivity.getResources().getString(Constants.AR.equalsIgnoreCase(language)?R.string.action4:R.string.action4_en);
-                break;
-
-        }
-        return action;
     }
 }

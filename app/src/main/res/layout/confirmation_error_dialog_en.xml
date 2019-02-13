@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ok"
                 android:textAllCaps="true"
-                android:text="@string/ok_en"
+                android:text="OK"
                 android:textStyle="bold"
                 android:textColor="@color/confirmation_buttons"/>
 

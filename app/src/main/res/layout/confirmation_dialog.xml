@@ -42,7 +42,7 @@
                 android:id="@+id/no"
                 android:textAllCaps="true"
                 android:textSize="20sp"
-                android:text="@string/no"
+                android:text="No"
                 android:textStyle="bold"
                 android:textColor="@color/confirmation_buttons"/>
             <TextView
@@ -52,7 +52,7 @@
                 android:textAllCaps="true"
                 android:textSize="20sp"
                 android:layout_marginLeft="40dp"
-                android:text="@string/yes"
+                android:text="Yes"
                 android:textStyle="bold"
                 android:textColor="@color/confirmation_buttons"/>
 

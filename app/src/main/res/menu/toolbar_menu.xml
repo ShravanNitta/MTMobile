@@ -4,11 +4,11 @@
 
     <item
         android:id="@+id/home"
-        android:title="@string/home_en"
+        android:title="Home"
         android:icon="@drawable/home_48dp"
         app:showAsAction="never"/>
     <item
         android:id="@+id/logout"
-        android:title="@string/logout_lbl_en"
+        android:title="Logout"
         app:showAsAction="never"/>
 </menu>

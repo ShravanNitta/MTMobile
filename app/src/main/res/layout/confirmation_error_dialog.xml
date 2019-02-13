@@ -43,7 +43,7 @@
                 android:id="@+id/ok"
                 android:textAllCaps="true"
                 android:textSize="22dp"
-                android:text="@string/ok"
+                android:text="OK"
                 android:textStyle="bold"
                 android:textColor="@color/confirmation_buttons"/>
 
