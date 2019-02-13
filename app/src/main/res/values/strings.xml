@@ -1,0 +1,1106 @@
+<resources>
+
+    //general messages
+
+    <string name="banan">MatchingTech</string>
+    <string name="banan_en">MatchingTech</string>
+    <string name="app_name">MatchingTech</string>
+    <string name="please_wait">الرجاء الانتظار&#8230;</string>
+    <string name="please_wait_face_detecting">جارٍ التحقق من صورة الوجه&#8230;</string>
+    <string name="turnon_data">الرجاء الاتصال بالشبكة للاستمرار</string>
+    <string name="connectionProblem_ar">حدثت مشكلة أثناء الاتصال بالسيرفر</string>
+    <string name="connectionProblem_en">Connection Problem</string>
+    <string name="connection_timeout">لم يتم استقبال الرد من السيرفر في الوقت المحدد</string>
+    <string name="no_network">Please check your network connection</string>
+    <string name="device_id">رقم الجهاز التسلسلي</string>
+    <string name="login_to_banan">تسجيل الدخول</string>
+    <string name="left_hand">اليد اليسرى</string>
+    <string name="right_hand">اليد اليمنى</string>
+    <string name="minimum_fingers_to_enroll">1</string>
+    <string name="minimum_fingers_to_enroll_text">يجب اختيار بصمة إصبع واحدة على الأقل للاستمرار في عملية التسجيل</string>
+    <string name="minimum_fingers_to_identify_text">يجب اختيار بصمة إصبع واحدة على الأقل للاستمرار في عملية التحقق</string>
+    <string name="version">v1.0</string>
+    <string name="bio_text2">تشغيل وتطوير مركز المعلومات الوطني</string>
+    <string name="exit_msg">هل أنت متأكد من أنك تريد الخروج من البرنامج؟</string>
+    <string name="privilege_text">المشغل لديه صلاحية للتجاوز عن بعض الأصابع</string>
+    <string name="no_privilege_text">المشغل ليس لديه صلاحية للتجاوز عن الأصابع</string>
+    <string name="ok">موافق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="segmentation_in_progress">جارٍ تقسيم بصمات الأصابع&#8230;</string>
+    <string name="enrolled">تم تسجيله مسبقاً</string>
+    <string name="not_enrolled">لم يتم تسجيله مسبقاً</string>
+    <string name="captureface_to_proceed">الرجاء التقاط صورة للوجه للاستمرار</string>
+    <string name="capturefingers_to_procedd">الرجاء التقاط بصمات الأصابع للاستمرار</string>
+    <string name="capture_in_progress">جارٍ التقاط بصمات الأصابع&#8230;</string>
+    <string name="recapture_title">إعادة الالتقاط</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+
+
+    //login related messages
+    <string name="invalid_resident_id">رقم الهوية غير صالح</string>
+    <string name="prompt_operatorid">رقم المشغل</string>
+    <string name="prompt_password">كلمة المرور</string>
+    <string name="prompt_person_id">رقم الهوية</string>
+    <string name="prompt_id">رقم الهوية</string>
+    <string name="prompt_username">أدخل اسم المستخدم</string>
+
+
+    //Error messages
+    <string name="operator_required">لم يتم تعبئة رقم المشغل</string>
+    <string name="operator_invalid">رقم المشغل غير صالح</string>
+    <string name="selectfinger_required">اختر الإصبع</string>
+    <string name="fingerprint_not_match">لا يوجد تطابق مع بصمة الإصبع، الرجاء المحاولة بإصبع آخر</string>
+    <string name="service_not_available">الخدمة غير متوفرة</string>
+    <string name="authentication_failed">فشل في تسجيل الدخول</string>
+    <string name="verification_failed">فشل في مطابقة بصمة الإصبع</string>
+    <string name="face_recognition_faile">فشل في التعرف على صورة الوجه</string>
+    <string name="identification_failed">فشل في التعرف على بصمات الأصابع</string>
+    <string name="failed_to_get_operator_roles">فشل في الحصول على صلاحيات المشغل</string>
+    <string name="enrollment_checkstatus_failed">فشل في الحصول على معلومات الشخص</string>
+    <string name="refresh_token_failed">Failed to refresh token</string>
+    <string name="enrollment_submit_failed">فشل في إرسال طلب التسجيل</string>
+    <string name="capture_failed">فشل في التقاط بصمات الأصابع، الرجاء المحاولة مرة أخرى</string>
+    <string name="segmentation_failed">فشل في تقسيم بصمات الأصابع، الرجاء إعادة التقاط بصمات الأصابع</string>
+    <string name="nfiq_failed">أعد التقاط بصمة الإصبع (جودة البصمة NFIQ غير جيدة)</string>
+    <string name="face_verification_failed">فشل في مطابقة صورة الوجه</string>
+
+    <string name="username_required"> فضلاً أدخل أسم المستخدم </string>
+
+    <string name="image_intensity">حدة الصورة</string>
+    <string name="image_intensity_low">صورة البصمة خافتة وغير واضحة</string>
+    <string name="image_intensity_high">صورة البصمة غامقة أكثر من اللازم</string>
+
+    <string name="id_required">لم يتم تعبئة رقم الهوية</string>
+    <string name="select_id_type">نوع الهوية</string>
+    <string name="duplicate_found">بصمة الإصبع مكررة، أعد الالتقاط مرة أخرى</string>
+    <string name="compress_failed">فشل في ضغط الصورة</string>
+
+
+    <string name="sector_required">يجب على الأقل إختيار موقع واحد</string>
+    <string name="sector_required_en">Select at least one sector</string>
+
+    //Enrollment
+    <string name="enroll_success">تمت عملية التسجيل بنجاح</string>
+    <string name="enroll_failed">فشل في عملية التسجيل</string>
+    <string name="capture_complete">تم التقاط بصمات الأصابع بنجاح</string>
+
+    <string name="citizen_id_invalid">رقم هوية المواطن يجب أن يبدأ بـ 1</string>
+    <string name="resident_id_invalid">رقم هوية المقيم يجب أن يبدأ بـ 2</string>
+    <string name="visitor_id_invalid">رقم هوية الزائر يجب أن يبدأ بـ 3 أو 4 أو 5</string>
+    <string name="illegal_id_invalid">رقم هوية المخالف غير صالح</string>
+    <string name="deportee_id_invalid">رقم هوية المرحل غير صالح</string>
+    <string name="pilgrim_id_invalid">رقم هوية الحاج يجب أن يبدأ بـ 6</string>
+
+    //menu labels
+    <string name="enrollment_lbl">تسجيل</string>
+    <string name="verification_lbl">مطابقة</string>
+    <string name="identification_lbl">استعلام</string>
+    <string name="verification_lbl_new">مطابقة البصمة</string>
+    <string name="identification_lbl_new">استعلام البصمة</string>
+    <string name="security_clearance_lbl_new">المسح الأمني</string>
+    <string name="security_clearance_by_face">المسح الأمني بواسطة الوجه</string>
+
+
+    <string name="hajj_permit_lbl">استعلام الحج</string>
+    <string name="security_clearance_lbl">مسح أمني</string>
+    <string name="face_recognition_lbl">التعرف على الوجه</string>
+    <!-- <string name="update_photo_lbl">تحديث صورة الوجه</string>-->
+    <string name="face_verification_lbl">مطابقة صورة الوجه</string>
+    <string name="pending_transactions_lbl">العمليات المعلقة</string>
+    <string name="morajae_lbl">مراجع</string>
+    <string name="morajae_permit_lbl">التحقق من تصريح المراجع</string>
+    <string name="logout_lbl">تسجيل الخروج</string>
+
+    //All button messages
+
+    <string name="login">تسجيل الدخول</string>
+    <string name="scan">التقاط البصمة</string>
+    <string name="get_details">جلب التفاصيل</string>
+    <string name="previous">السابق</string>
+    <string name="next">التالي</string>
+    <string name="submit">إرسال</string>
+    <string name="home">الصفحة الرئيسية</string>
+
+    //All Actions
+    <string name="recapture">هل أنت متأكد من أنك تريد إعادة التقاط البصمة مرة أخرى؟</string>
+    <string name="stop_capture">هل أنت متأكد من أنك تريد إيقاف التقاط البصمة؟</string>
+    <string name="person_details">معلومات الشخص</string>
+    <string name="face_capture">التقاط صورة الوجه</string>
+    <string name="missing_fingers">التجاوز عن بعض بصمات الأصابع</string>
+    <string name="capture_fingers">التقاط بصمات الأصابع</string>
+    <string name="verification">مطابقة بصمة الإصبع</string>
+    <string name="verification_results">نتائج مطابقة بصمة الإصبع</string>
+
+    <string name="enrollment_summary">ملخص عملية التسجيل</string>
+    <string name="enrollment_result">نتيجة عملية التسجيل</string>
+
+    <string name="missing_fingers_identification">التجاوز عن بعض بصمات الأصابع</string>
+    <string name="capture_identification">التقاط بصمات الأصابع</string>
+    <string name="identification_result">نتائج الاستعلام</string>
+    <string name="pending_transactions">العمليات المعلقة</string>
+
+    //IdTypes
+    <string name="prompt_id_type">نوع الهوية</string>
+    <string name="citizen">مواطن</string>
+    <string name="resident">مقيم</string>
+    <string name="visitor">زائر</string>
+    <string name="illegal">مخالف</string>
+    <string name="deportee">مرحل</string>
+    <string name="pilgrim">حاج</string>
+    <string name="passport">الجواز</string>
+    <string name="title_activity_login">تسجيل الدخول</string>
+
+
+    <string name="first_name">الاسم الأول</string>
+    <string name="id_number">رقم الهوية</string>
+    <string name="family_name">اسم العائلة</string>
+    <string name="father_name">اسم الأب</string>
+    <string name="grand_father_name">اسم الجد</string>
+    <string name="enroll_status">حالة التسجيل</string>
+
+    //Finger Types
+    <string name="chooseFinger">اختر نوع الاصبع</string>
+    <string name="left_thumb">الإبهام الأيسر</string>
+    <string name="left_index">السبابة اليسرى</string>
+    <string name="left_middle">الأوسط الأيسر</string>
+    <string name="left_ring">البنصر الأيسر</string>
+    <string name="left_little">الخنصر الأيسر</string>
+    <string name="right_thumb">الإبهام الأيمن</string>
+    <string name="right_index">السبابة اليمنى</string>
+    <string name="right_middle">الأوسط الأيمن</string>
+    <string name="right_ring">البنصر الأيمن</string>
+    <string name="right_little">الخنصر الايمن</string>
+
+
+    <string name="right_index_middle">السبابة اليمنى والأوسط الأيمن</string>
+    <string name="left_index_middle">السبابة اليسرى والأوسط الأيسر</string>
+
+    <string name="place_your">ضع</string>
+    <string name="on_reader">على جهاز البصمة</string>
+
+
+    <string name="Nationality">الجنسية</string>
+    <string name="occupation">المهنة</string>
+    <string name="Father">اسم الأب</string>
+    <string name="Family">اسم العائلة</string>
+    <string name="Grandfather">اسم الجد</string>
+    <string name="Gender">الجنس</string>
+    <string name="Birthdate">تاريخ الميلاد</string>
+    <string name="MaritalStatus">الحالة الاجتماعية</string>
+    <string name="Sponsor">رقم الكفيل</string>
+    <string name="IdIssueDate">تاريخ إصدار الهوية</string>
+    <string name="ExpiryDate">تاريخ انتهاء الهوية</string>
+    <string name="IsExitVisa">خروج نهائي</string>
+    <string name="trGrandfather">اسم الجد</string>
+
+
+    <string name="isenrolled">مبصم</string>
+    <string name="isout">خارج المملكة</string>
+
+    <string name="trfather">اسم الأب مترجم</string>
+    <string name="trfirst">الاسم الأول مترجم</string>
+    <string name="trfamily">اسم العائلة مترجم</string>
+
+
+    <string name="personInfo">معلومات الهوية</string>
+    <string name="idStatus">حالة الهوية</string>
+
+    <string name="score">درجة التطابق</string>
+    <string name="bioid">رقم السمات</string>
+    <string name="face_captured_successfully">تم التقاط صورة الوجه بنجاح</string>
+    <string name="device">الجهاز</string>
+    <string name="attached">متصل</string>
+    <string name="detached">غير متصل</string>
+    <string name="permission_granted">تم إعطاء الصلاحية للجهاز</string>
+    <string name="permission_denied">لم يتم إعطاء الصلاحية للجهاز</string>
+    <string name="device_status">حالة الجهاز</string>
+    <string name="initializing_device">جارٍ تهيئة الجهاز</string>
+    <string name="device_initialized">تم تهيئة الجهاز</string>
+    <string name="could_not_be_initialized">فشل في تهيئة الجهاز بسبب الخطأ</string>
+    <string name="communication_break">تم فصل الاتصال مع جهاز البصمة</string>
+    <string name="could_not_close_device">فشل في إغلاق جهاز البصمة</string>
+    <string name="demographics">المعلومات الوصفية</string>
+    <string name="fingers_capture">التقاط البصمات</string>
+
+    <string name="minutiae">النقاط المميزة</string>
+    <string name="minutia_failed">أعد التقاط بصمة الإصبع (عدد النقاط المميزة غير كافية)</string>
+
+
+    //Business ErrorCodes
+    <string name="LOGIN_FROM_DIFFERENT_MACHINE_ERROR_CODE">B001-00002: اسم المستخدم قيد الاستعمال حالياً على جهاز آخر.</string>
+    <string name="UNDEFINED_LOCATION_ERROR_CODE">B001-00003: الموقع غير معروف.</string>
+    <string name="USER_NOTAUTHORIZED_AT_THIS_LOCATION">B001-00004: المستخدم غير مسموح له تسجيل الدخول.</string>
+    <string name="USER_HAS_NO_LOCATION">B001-00005: هذا المستخدم لا يوجد لديه موقع مسجل.</string>
+    <string name="USER_HAS_NO_INFORMATION">B001-00007: بيانات المستخدم غير مسجلة في النظام.</string>
+    <string name="INVALID_CREDENTIALS">B001-00008: خطأ في اسم المستخدم أو كلمة المرور.</string>
+    <string name="USER_NOT_FOUND">B001-00009: المستخدم غير موجود.</string>
+    <string name="NOT_PERMITTED_TO_LOGIN_AT_THIS_TIME">B001-00010: غير مسموح الدخول في هذا الوقت.</string>
+    <string name="RESTRICTED_TO_SPECIFIC_MACHINES">B001-00011: مقيّد لأجهزة محددة.</string>
+    <string name="PASSWORD_EXPIRED">B001-00012: انتهت صلاحية كلمة المرور.</string>
+    <string name="ACCOUNT_DISABLED">B001-00013: الحساب غير مفعّل.</string>
+    <string name="LDAP_ERROR_ACCOUNT_EXPIRED">B001-00014: انتهت صلاحية الحساب.</string>
+    <string name="USER_MUST_RESET_PASSWORD">B001-00015: يجب على المستخدم تغيير كلمة المرور.</string>
+    <string name="USER_CHANGE_PASSWORD_POLICY_REQUIREMENTS_FALED">B001-00016: كلمة المرور الجديدة لا تتوافق مع متطلبات الأمان المحددة بواسطة مسؤول الشبكة.</string>
+    <string name="FINGERPRINT_VERIFICATION_FAILED_A">B001-00017: فشل التحقق بواسطة بصمات الأصابع.</string>
+    <string name="USER_HAS_NO_IP_ADDRESS">B001-00018: لا يوجد عنوان IP للمستخدم.</string>
+    <string name="UNUATHORIZED_ACCESS_ERROR_CODE">B010-00001: ليس لديك صلاحية للقيام بهذه العملية.</string>
+    <string name="INVALID_TOKEN_ERROR_CODE">B010-00002: رمز التحقق المرسل مع الطلب غير صالح.</string>
+    <string name="TOKEN_NOT_PROVIDED">B010-00003: الطلب المرسل لا يحتوي على رمز تحقق.</string>
+    <string name="INVALID_SAMIS_ID__NUMBER">B004-00001: رقم الهوية غير صحيح.</string>
+    <string name="PERSON_INFORMATION_NOT_FOUND">B004-00002: معلومات الشخص غير متوفرة.</string>
+    <string name="FACE_IMAGE_NOT_FOUND">B004-00003: صورة الوجه غير متوفرة.</string>
+    <string name="NO_FACE_IMAGE_FOUND">B003-0018: صورة الوجه غير متوفرة.</string>
+    <string name="INVALID_OR_MISSING_FACE_IMAGE">B003-00001: الصورة المرسلة لا تحتوي على صورة وجه.</string>
+    <string name="FACE_SEARCH_HAS_NO_HIT">B003-00002: لم يتم إيجاد تطابق للوجه في قواعد البيانات.</string>
+    <string name="PERSON_INFORMATION_NOT_FOUND_FOR_HIT_RESULT">B003-00003: بيانات الأشخاص غير متوفرة لكل النتائج.</string>
+    <string name="AFFECTED_CRIMINAL_RECORD_NUMBERS_EXCEEDED">B003-00004: عدد السجلات الجنائية لهذا الشخص تجاوز العدد المسموح.</string>
+    <string name="FINGERPRINT_VERIFICATION_FAILED">B003-0005: فشل التحقق بواسطة بصمات الأصابع.</string>
+    <string name="INVALID_FINGER_STRUCTURE">B003-0006: خطأ في هيكلة بصمات الأصابع.</string>
+    <string name="NO_PERSON_INFORMATION_FOUND">B003-0008: معلومات الشخص غير متوفرة.</string>
+    <string name="NO_FINGERPRINTS_FOUND_A">B003-0007: بصمات الأصابع غير متوفرة.</string>
+    <string name="NO_FINGERPRINTS_FOUND">B001-00019: بصمات الأصابع غير متوفرة.</string>
+    <string name="NO_STATUS_FOUND_FOR_INQUIRY_ID">B003-0009: حالة الاستعلام غير متوفرة</string>
+    <string name="INVALID_FINGERPRINT_PRESENCE">B003-0010: حالة بصمات الأصابع غير صالحة.</string>
+    <string name="FACE_IMAGE_RESIZE_FAILED">B003-0011: فشل في إعادة ضبط أبعاد صورة الوجه</string>
+    <string name="FACE_IMAGE_SIZE_EXCEEDED_LIMIT">B003-0012: حجم ملف صورة الوجه تجاوز الحد المسموح به </string>
+    <string name="FACE_IMAGE_COMPRESSION_FAILED">B003-0013: فشل في ضغط صورة الوجه</string>
+    <string name="FACE_VERIFICATION_DOES_NOT_MATCH">B003-0021: لا يوجد تطابق للوجه.</string>
+    <string name="STATUS_INQUIRY_NOHIT">لم ينتج عن استعلام البصمات أي تطابق في قواعد البيانات</string>
+
+    <string name="FACE_VERIFICATION_NO_FACE">B003-0022: الصورة لا تحتوي على وجه.</string>
+    <string name="FACE_VERIFICATION_MULTIPLE_FACES"> B003-0023: يوجد عدة أوجه داخل الصورة.</string>
+
+    <string name="NO_DEAD_PERSON_INFO_FOUND">B003-0024: لا توجد أية معلومات عن المتوفى.</string>
+    <string name="DEAD_PERSON_ENROLLMENT_FAILED">B003-0025: عملية تسجيل غير ناجحة للمتوفى.</string>
+    <string name="DEAD_PERSON_NO_BARCODE_FOUND">B003-0027:  رقم الباركود غير موجود.</string>
+    <string name="INVALID_DEAD_PERSON_JSON_STRUCTURE">B003-0028: المعلومات المرسلة غير متوافقة او متجانسة.</string>
+    <string name="DEAD_PERSON_BARCODE_ID_ALREADY_EXIST">B003-0029: رقم الباركود المدخل موجود مسبقا.</string>
+
+
+    <string name="PERMIT_EXPIRED">B004-00010:تصريح منتهي </string>
+    <string name="PERMIT_NOT_FOUND">B004-00011: لا يوجد تصريح </string>
+
+    <string name="PERMIT_EXPIRED_en">B004-00010: Permit Expired.</string>
+    <string name="PERMIT_NOT_FOUND_en">B004-00011: Permit not found.</string>
+
+
+    <string name="PERMIT_ALREADY_PROCESSED">B004-00009: تم تسجيل التصريح سابقاً.</string>
+    <string name="THIS_OPERATOR_REGISTER_TO_ANOTHER_SECTOR">B004-00013: المسجل تم تسجيله مع موقع آخر.</string>
+    <string name="NO_PERMISSION_ON_THIS_SECTORS">B004-00014: لا توجد صلاحية على هذا الموقع.</string>
+    <string name="PERSON_INFORMATION_NOT_ENTERED">B004-00006: لم يتم إدخال معلومات الشخص.</string>
+
+
+    <string name="PERMIT_ALREADY_PROCESSED_en">B004-00009: Permit already processed.</string>
+    <string name="THIS_OPERATOR_REGISTER_TO_ANOTHER_SECTOR_en">B004-00013: The operator is registered with another sector.</string>
+    <string name="NO_PERMISSION_ON_THIS_SECTORS_en">B004-00014: No permission on this sector.</string>
+    <string name="PERSON_INFORMATION_NOT_ENTERED_en">B004-00006: Person information is not entered.</string>
+
+
+    <string name="no_permission_on_this_sector">لا توجد صلاحية على هذا الموقع.</string>
+    <string name="no_permission_on_this_sector_en">No permission on this sector</string>
+
+    <string name="operator_register_to_another_sector"> المسجل تم تسجيله مع موقع آخر.</string>
+    <string name="operator_register_to_another_sector_en">The operator is registered with another sector.</string>
+
+
+    <string name="UNKNOWN">غير معروف</string>
+    <string name="failed_to_get_person_details">فشل في الحصول على معلومات الشخص</string>
+    <string name="failed_to_get_person_basic_info">فشل في الحصول على معلومات الشخص الأساسية</string>
+
+    <string name="session_timeout">انتهت صلاحية الدخول</string>
+
+    <string name="status_2">الحالة: قيد الانتظار</string>.
+
+    <string name="status_4">الحالة: خطأ في التسجيل</string>
+    <string name="status_6">الحالة: محذوف</string>
+    <string name="status_22">الحالة: للتسجيل لاحقاً</string>
+    <string name="status_5">الحالة: للتحقق البصري</string>
+
+    <string name="date">تاريخ</string>
+    <string name="pending">قيد التنفيذ</string>
+    <string name="completed">اكتمل</string>
+
+    <string name="enrollment_pending">التسجيل قيد التنفيذ</string>
+    <string name="identification_pending">التعرف على بصمات الأصابع قيد التنفيذ</string>
+    <string name="enrollment_taking_time_msg">عملية التسجيل سوف تستغرق بعض الوقت، يمكنك الإطلاع على النتيجة لاحقاً من خلال القائمة "العمليات المعلقة"</string>
+    <string name="identification_taking_time_msg">عملية التعرف على بصمات الأصابع سوف تستغرق بعض الوقت، يمكنك الإطلاع على النتيجة لاحقاً من خلال القائمة "العمليات المعلقة"</string>
+    <string name="show_details"><u>اعرض التفاصيل</u></string>
+
+    <string name="no_pending_transactions">لا توجد عمليات معلقة</string>
+
+    <string name="click_here_to_capture">اضغط هنا لالتقاط الصورة</string>
+    <string name="click_here_to_open_camera">اضغط هنا لفتح الكاميرا</string>
+    <string name="language_ar">عربي</string>
+
+    <string name="exit">خروج</string>
+    <string name="NO_FACE_DETECTED">لم يتم اكتشاف أي وجه!</string>
+    <string name="YAW_ERROR">الوجه ليست في المنتصف أفقياً (محور yaw)!</string>
+    <string name="PITCH_ERROR">الوجه ليست في المنتصف عمودياً (محور pitch)!</string>
+    <string name="ROLL_ERROR">الوجه مائل (محور roll)!</string>
+    <string name="SHADOW_ERROR">يوجد ظل!</string>
+    <string name="RIGHT_EYE_CLOSED">العين البمنى مغلقة!</string>
+    <string name="LEFT_EYE_CLOSED">العين اليسرى مغلقة!</string>
+    <string name="EYE_GAZE_ERROR">العينان لا تنظران إلى الكاميرا!</string>
+    <string name="MULTIPLE_FACES_DETECTED">تم اكتشاف عدة وجوه!</string>
+    <string name="DISPOSED">DISPOSED</string>
+    <string name="recapture_face">فشل في عملية ضغط صورة الوجه. الرجاء إعادة التقاط صورة الوجه مرة أخرى</string>
+
+    <string name="coming_soon">سيتم قريباً !!!</string>
+    <string name="arabic_icon_text">ع</string>
+    <string name="add_violation">إضافة مخالفة</string>
+    <string name="add_violation_prompt">هل انت متأكد من اضافة مخالفة حج لهذا الشخص ؟</string>
+    <string name="birthCity">مدينة الميلاد</string>
+    <string name="idRenewDate">تاريخ تجديد الهوية</string>
+    <string name="birthCountry">دولة الميلاد</string>
+    <string name="dead">متوفي</string>
+    <string name="birthPlace">مكان الميلاد</string>
+    <string name="wantedBy">مطلوب من</string>
+    <string name="action_to_be_taken">الإجراء</string>
+    <string name="wanted">مطلوب</string>
+    <string name="action1">يقبض عليه</string>
+    <string name="action2">إيقاف خدمات</string>
+    <string name="action3">يبلغ بالمراجعة</string>
+    <string name="action4">منع سفر</string>
+
+
+    <string name="fingers_availability_failed">خطأ في عملية البحث عن البصات</string>
+    <string name="failed_to_get_available_fingers">حدث خطأ أثناء عملية البحث عن بصمات الشخص</string>
+    <string name="face_verification">مطابقة صورة الوجه</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+
+    <string name="person_not_enrolled">الشخص غير مسجل</string>
+    <string name="no_match">لا يوجد تطابق</string>
+    <string name="person_not_found">الشخص غير موجود</string>
+    <string name="captured_face">الصورة الملتقطة</string>
+    <string name="original_face">الصورة الاصلية</string>
+
+    <string name="cancel_msg">هل تريد الالغاء؟  </string>
+
+    <integer name="right.thumb.nfiq.acceptable.value.for.enrollment">2</integer>
+    <integer name="right.index.nfiq.acceptable.value.for.enrollment">2</integer>
+    <integer name="right.middle.nfiq.acceptable.value.for.enrollment">2</integer>
+    <integer name="right.ring.nfiq.acceptable.value.for.enrollment">3</integer>
+    <integer name="right.little.nfiq.acceptable.value.for.enrollment">3</integer>
+    <integer name="left.thumb.nfiq.acceptable.value.for.enrollment">2</integer>
+    <integer name="left.index.nfiq.acceptable.value.for.enrollment">2</integer>
+    <integer name="left.middle.nfiq.acceptable.value.for.enrollment">2</integer>
+    <integer name="left.ring.nfiq.acceptable.value.for.enrollment">3</integer>
+    <integer name="left.little.nfiq.acceptable.value.for.enrollment">3</integer>
+
+    <integer name="ri.rm.nfiq.acceptable.value.for.enrollment">2</integer>
+    <integer name="li.lm.nfiq.acceptable.value.for.enrollment">2</integer>
+
+    <integer name="ri.rm.minutiae.acceptance.for.enrollment">30</integer>
+    <integer name="li.lm.minutiae.acceptance.for.enrollment">30</integer>
+
+    <integer name="right.thumb.minutiae.acceptable.value.for.enrollment">30</integer>
+    <integer name="right.index.minutiae.acceptable.value.for.enrollment">30</integer>
+    <integer name="right.middle.minutiae.acceptable.value.for.enrollment">25</integer>
+    <integer name="right.ring.minutiae.acceptable.value.for.enrollment">20</integer>
+    <integer name="right.little.minutiae.acceptable.value.for.enrollment">20</integer>
+    <integer name="left.thumb.minutiae.acceptable.value.for.enrollment">30</integer>
+    <integer name="left.index.minutiae.acceptable.value.for.enrollment">30</integer>
+    <integer name="left.middle.minutiae.acceptable.value.for.enrollment">25</integer>
+    <integer name="left.ring.minutiae.acceptable.value.for.enrollment">20</integer>
+    <integer name="left.little.minutiae.acceptable.value.for.enrollment">20</integer>
+
+
+    <integer name="right.thumb.nfiq.acceptable.value.for.verify">3</integer>
+    <integer name="right.index.nfiq.acceptable.value.for.verify">3</integer>
+    <integer name="right.middle.nfiq.acceptable.value.for.verify">3</integer>
+    <integer name="right.ring.nfiq.acceptable.value.for.verify">3</integer>
+    <integer name="right.little.nfiq.acceptable.value.for.verify">3</integer>
+    <integer name="left.thumb.nfiq.acceptable.value.for.verify">3</integer>
+    <integer name="left.index.nfiq.acceptable.value.for.verify">3</integer>
+    <integer name="left.middle.nfiq.acceptable.value.for.verify">3</integer>
+    <integer name="left.ring.nfiq.acceptable.value.for.verify">3</integer>
+    <integer name="left.little.nfiq.acceptable.value.for.verify">3</integer>
+
+    <integer name="right.thumb.minutiae.acceptable.value.for.verify">30</integer>
+    <integer name="right.index.minutiae.acceptable.value.for.verify">30</integer>
+    <integer name="right.middle.minutiae.acceptable.value.for.verify">25</integer>
+    <integer name="right.ring.minutiae.acceptable.value.for.verify">20</integer>
+    <integer name="right.little.minutiae.acceptable.value.for.verify">20</integer>
+    <integer name="left.thumb.minutiae.acceptable.value.for.verify">30</integer>
+    <integer name="left.index.minutiae.acceptable.value.for.verify">30</integer>
+    <integer name="left.middle.minutiae.acceptable.value.for.verify">25</integer>
+    <integer name="left.ring.minutiae.acceptable.value.for.verify">20</integer>
+    <integer name="left.little.minutiae.acceptable.value.for.verify">20</integer>
+
+    <integer name="ri.rm.nfiq.acceptable.value.for.verify">3</integer>
+    <integer name="li.lm.nfiq.acceptable.value.for.verify">3</integer>
+
+    <integer name="ri.rm.minutiae.acceptance.for.verify">30</integer>
+    <integer name="li.lm.minutiae.acceptance.for.verify">30</integer>
+
+
+    <integer name="right.thumb.minimumAcceptableValue.imageIntensity">30</integer>
+    <integer name="right.index.minimumAcceptableValue.imageIntensity">30</integer>
+    <integer name="right.middle.minimumAcceptableValue.imageIntensity">30</integer>
+    <integer name="right.ring.minimumAcceptableValue.imageIntensity">30</integer>
+    <integer name="right.little.minimumAcceptableValue.imageIntensity">30</integer>
+    <integer name="left.thumb.minimumAcceptableValue.imageIntensity">30</integer>
+    <integer name="left.index.minimumAcceptableValue.imageIntensity">30</integer>
+    <integer name="left.middle.minimumAcceptableValue.imageIntensity">30</integer>
+    <integer name="left.ring.minimumAcceptableValue.imageIntensity">30</integer>
+    <integer name="left.little.minimumAcceptableValue.imageIntensity">30</integer>
+
+    <integer name="right.thumb.maximumAcceptableValue.imageIntensity">75</integer>
+    <integer name="right.index.maximumAcceptableValue.imageIntensity">75</integer>
+    <integer name="right.middle.maximumAcceptableValue.imageIntensity">75</integer>
+    <integer name="right.ring.maximumAcceptableValue.imageIntensity">75</integer>
+    <integer name="right.little.maximumAcceptableValue.imageIntensity">75</integer>
+    <integer name="left.thumb.maximumAcceptableValue.imageIntensity">75</integer>
+    <integer name="left.index.maximumAcceptableValue.imageIntensity">75</integer>
+    <integer name="left.middle.maximumAcceptableValue.imageIntensity">75</integer>
+    <integer name="left.ring.maximumAcceptableValue.imageIntensity">75</integer>
+    <integer name="left.little.maximumAcceptableValue.imageIntensity">75</integer>
+
+    <integer name="ri.rm.minimumAcceptableValue.imageIntensity">30</integer>
+    <integer name="li.lm.minimumAcceptableValue.imageIntensity">80</integer>
+
+    <integer name="ri.rm.maximumAcceptableValue.imageIntensity">30</integer>
+    <integer name="li.lm.maximumAcceptableValue.imageIntensity">80</integer>
+
+
+    <integer name="continuous_request_time">30</integer>
+    <bool name="missing_fingers_privilage">false</bool>
+
+
+    <!--###############English#############-->
+
+    //general messages
+    <string name="app_name_en">Banan</string>
+    <string name="please_wait_en">Please wait....</string>
+    <string name="please_wait_face_detecting_en">Detecting faces please wait ....</string>
+    <string name="turnon_data_en">Please turn on mobile data to proceed.</string>
+
+    <string name="connection_timeout_en">Connection timed out</string>
+    <string name="no_network_en">Please check your network connection</string>
+    <string name="device_id_en">Device Id</string>
+    <string name="login_to_banan_en">Login to Banan</string>
+    <string name="left_hand_en">Left Hand</string>
+    <string name="right_hand_en">Right Hand</string>
+    <string name="minimum_fingers_to_enroll_text_en">At least one finger is needed for enrollment.</string>
+    <string name="minimum_fingers_to_identify_text_en">At least one finger is needed to Identify.</string>
+    <string name="bio_text2_en">Powered by National Information Center</string>
+    <string name="exit_msg_en">Are you sure you want to Exit ?</string>
+    <string name="privilege_text_en">Operator has privileges to skip missing fingers.</string>
+    <string name="no_privilege_text_en">Operator does\'t have privileges to skip fingers.</string>
+    <string name="ok_en">OK</string>
+    <string name="cancel_en">Cancel</string>
+    <string name="segmentation_in_progress_en">Segmentation is in progress</string>
+    <string name="enrolled_en">Enrolled</string>
+    <string name="not_enrolled_en">Not Enrolled</string>
+    <string name="captureface_to_proceed_en">Capture face to proceed</string>
+    <string name="capturefingers_to_procedd_en">Capture fingers to proceed</string>
+    <string name="capture_in_progress_en">Capture in progress</string>
+    <string name="recapture_title_en">Re-capture</string>
+    <string name="male_en">Male</string>
+    <string name="female_en">Female</string>
+
+    //login related messages
+    <string name="invalid_resident_id_en">Invalid id number</string>
+    <string name="prompt_operatorid_en">Enter Operator Id</string>
+    <string name="prompt_password_en">Enter password</string>
+    <string name="prompt_person_id_en">Enter person Id</string>
+    <string name="prompt_id_en">Enter id number</string>
+
+    <string name="prompt_username_en">Enter Username</string>
+
+
+    //Error messages
+    <string name="operator_required_en">Operator Id should not be empty</string>
+    <string name="operator_invalid_en">Invalid operator id</string>
+    <string name="selectfinger_required_en">Please select finger</string>
+    <string name="fingerprint_not_match_en">Fingerprint did not match try with other finger</string>
+    <string name="service_not_available_en">Service not available</string>
+    <string name="authentication_failed_en">Authentication failed</string>
+    <string name="verification_failed_en">Verification failed</string>
+    <string name="face_recognition_faile_en">Face recognition failed</string>
+    <string name="identification_failed_en">Identification failed</string>
+    <string name="failed_to_get_operator_roles_en">Failed to get operator roles</string>
+    <string name="enrollment_checkstatus_failed_en">Enrollment check status</string>
+    <string name="refresh_token_failed_en">Failed to refresh token</string>
+    <string name="enrollment_submit_failed_en">Enrollment submission failed</string>
+    <string name="capture_failed_en">Capture Failed</string>
+    <string name="segmentation_failed_en">Segmentation failed</string>
+    <string name="nfiq_failed_en">Fingerprint Quality (NFIQ) failed</string>
+    <string name="username_required_en">Username is required</string>
+    <string name="password_required_en">Password is required</string>
+    <string name="image_intensity_en">Image Intensity</string>
+
+    <string name="image_intensity_high_en">Image too dark or wet finger.</string>
+    <string name="image_intensity_low_en">Image too light or dry finger</string>
+
+    <string name="id_required_en">Id number required</string>
+    <string name="select_id_type_en">Select Id type</string>
+    <string name="duplicate_found_en">Duplicate finger found</string>
+    <string name="compress_failed_en">Compression failed</string>
+
+    //Enrollment
+    <string name="enroll_success_en">Enrollment Success</string>
+    <string name="enroll_failed_en">Enrollment Failed</string>
+    <string name="capture_complete_en">Capture Complete</string>
+
+    <string name="citizen_id_invalid_en">Citizen Id must starts with 1</string>
+    <string name="resident_id_invalid_en">Resident Id must starts with 2</string>
+    <string name="visitor_id_invalid_en">Visitor Id must start with 3 or 4 or 5</string>
+    <string name="illegal_id_invalid_en">Invalid illegal Id</string>
+    <string name="deportee_id_invalid_en">Invalid deportee Id</string>
+    <string name="pilgrim_id_invalid_en">Pilgrim Id must starts with 6</string>
+
+    //menu labels
+    <string name="enrollment_lbl_en">Enrollment</string>
+    <string name="verification_lbl_en">Verification</string>
+    <string name="identification_lbl_en">Identification</string>
+    <string name="hajj_permit_lbl_en">Hajj Permit</string>
+    <string name="security_clearance_lbl_en">Security Clearance</string>
+    <string name="security_clearance_by_face_en">Security Clearance By Face</string>
+    <string name="face_recognition_lbl_en">Face Recognition</string>
+    <string name="face_verification_lbl_en">Face Verify</string>
+    <string name="pending_transactions_lbl_en">Pending Transactions</string>
+    <string name="logout_lbl_en">Logout</string>
+    <string name="face_verification_en">Face Verification</string>
+    <string name="morajae_lbl_en">Morajae</string>
+    <string name="morajae_permit_lbl_en">Morajae Permit Verification</string>
+    <string name="identification_dead_person_lbl_en">DeadPersons Inquiry</string>
+    <string name="identification_dead_person_lbl">الاستعلام عن الاشخاص المتوفيين</string>
+
+    //All button messages
+
+    <string name="login_en">Login</string>
+    <string name="scan_en">Scan Finger</string>
+    <string name="get_details_en">Get Details</string>
+    <string name="previous_en">Previous</string>
+    <string name="next_en">Next</string>
+    <string name="submit_en">Submit</string>
+    <string name="home_en">Home</string>
+
+    //All Actions
+    <string name="recapture_en">Are you sure you want re capture ?</string>
+    <string name="stop_capture_en">Are you sure you want to stop capture ?</string>
+
+
+    <string name="person_details_en">Person Details</string>
+    <string name="face_capture_en">Face Capture</string>
+    <string name="missing_fingers_en">Missing Fingers</string>
+    <string name="capture_fingers_en">Capture Fingers</string>
+    <string name="verification_en">Verification</string>
+    <string name="verification_results_en">Verification Results</string>
+
+    <string name="enrollment_summary_en">Enrollment Summary</string>
+    <string name="enrollment_result_en">Enrollment Result</string>
+
+    <string name="missing_fingers_identification_en">Missing Fingers - Identification</string>
+    <string name="capture_identification_en">Capture - Identification</string>
+    <string name="identification_result_en">Identification Result</string>
+    <string name="pending_transactions_en">Pending Transactions</string>
+
+    //IdTypes
+    <string name="prompt_id_type_en">Enter Id Type</string>
+    <string name="citizen_en">Citizen</string>
+    <string name="resident_en">Resident</string>
+    <string name="visitor_en">Visitor</string>
+    <string name="illegal_en">Illegal</string>
+    <string name="deportee_en">Deportee</string>
+    <string name="pilgrim_en">Pilgrim</string>
+    <string name="passport_en">Passport</string>
+    <string name="title_activity_login_en">Login</string>
+
+
+    <string name="first_name_en">First Name</string>
+    <string name="id_number_en">Id Number</string>
+    <string name="family_name_en">Family Name</string>
+    <string name="father_name_en">Father Name</string>
+    <string name="grand_father_name_en">Grandfather Name</string>
+    <string name="enroll_status_en">Enroll Status</string>
+
+    //Finger Types
+    <string name="chooseFinger_en">Select Finger</string>
+    <string name="left_thumb_en">Left Thumb</string>
+    <string name="left_index_en">Left Index</string>
+    <string name="left_middle_en">Left Middle</string>
+    <string name="left_ring_en">Left Ring</string>
+    <string name="left_little_en">Left Little</string>
+    <string name="right_thumb_en">Right Thumb</string>
+    <string name="right_index_en">Right Index</string>
+    <string name="right_middle_en">Right Middle</string>
+    <string name="right_ring_en">Right Ring</string>
+    <string name="right_little_en">Right Little</string>
+
+
+    <string name="right_index_middle_en">Right Index &amp; Middle</string>
+    <string name="left_index_middle_en">Left Index &amp; Middle</string>
+
+    <string name="place_your_en">Place your</string>
+    <string name="on_reader_en">on the reader</string>
+
+
+    <string name="Nationality_en">Nationality</string>
+    <string name="First_Name_en">First Name</string>
+    <string name="occupation_en">Occupation</string>
+    <string name="Father_en">Father Name</string>
+    <string name="Family_en">Family Name</string>
+    <string name="Grandfather_en">Grandfather</string>
+    <string name="Gender_en">Gender</string>
+    <string name="Birthdate_en">Birth Date</string>
+    <string name="MaritalStatus_en">Marital Status</string>
+    <string name="Sponsor_en">Sponsor</string>
+    <string name="IdIssueDate_en">Id IssueDate</string>
+    <string name="ExpiryDate_en">Expiry Date</string>
+    <string name="IsExitVisa_en">Is ExitVisa</string>
+    <string name="personInfo_en">PersonInfo</string>
+    <string name="idStatus_en">ID Status</string>
+    <string name="trfamily_en">TR Family</string>
+    <string name="trGrandfather_en">TR GrandFather</string>
+    <string name="trfather_en">TR Father</string>
+    <string name="trfirst_en">TR First</string>
+    <string name="isenrolled_en">Is Enrolled</string>
+    <string name="isout_en">Is Out</string>
+    <string name="title_activity_home_en">Home</string>
+
+    <string name="score_en">Score</string>
+    <string name="bioid_en">Bio Id</string>
+    <string name="face_captured_successfully_en">Face captured successfully</string>
+    <string name="device_en">Device</string>
+    <string name="attached_en">attached</string>
+    <string name="detached_en">detached</string>
+    <string name="permission_granted_en">Permission granted</string>
+    <string name="permission_denied_en">Permission denied</string>
+    <string name="device_status_en">Device status</string>
+    <string name="initializing_device_en">initializing device</string>
+    <string name="device_initialized_en">Device initialized</string>
+    <string name="could_not_be_initialized_en">Coluld not initialize the device</string>
+    <string name="communication_break_en">Communication break</string>
+    <string name="could_not_close_device_en">Could not close the device</string>
+    <string name="demographics_en">Demographics</string>
+    <string name="fingers_capture_en">Fingers Capture</string>
+
+    <string name="minutiae_en">Minutiae</string>
+    <string name="minutia_failed_en">Minutia failed</string>
+
+
+    //Business ErrorCodes
+    <string name="LOGIN_FROM_DIFFERENT_MACHINE_ERROR_CODE_en">B001-00002: User is logged in on another machine.</string>
+    <string name="UNDEFINED_LOCATION_ERROR_CODE_en">B001-00003: Undefined location.</string>
+    <string name="USER_NOTAUTHORIZED_AT_THIS_LOCATION_en">B001-00004: User is not allowed to login.</string>
+    <string name="USER_HAS_NO_LOCATION_en">B001-00005: User has no location defined.</string>
+    <string name="USER_HAS_NO_INFORMATION_en">B001-00007: The user information does not exist in the system.</string>
+    <string name="INVALID_CREDENTIALS_en">B001-00008: Wrong username/password.</string>
+    <string name="USER_NOT_FOUND_en">B001-00009: User not found.</string>
+    <string name="NOT_PERMITTED_TO_LOGIN_AT_THIS_TIME_en">B001-00010: Not permitted to login at this time.</string>
+    <string name="RESTRICTED_TO_SPECIFIC_MACHINES_en">B001-00011: Restricted to specific machines.</string>
+    <string name="PASSWORD_EXPIRED_en">B001-00012: Password is expired.</string>
+    <string name="ACCOUNT_DISABLED_en">B001-00013: Account is disabled.</string>
+    <string name="LDAP_ERROR_ACCOUNT_EXPIRED_en">B001-00014: Account is expired.</string>
+    <string name="USER_MUST_RESET_PASSWORD_en">B001-00015: User must reset password.</string>
+    <string name="USER_CHANGE_PASSWORD_POLICY_REQUIREMENTS_FALED_en">B001-00016: The value provided for the new password does not meet the length, complexity, or history requirements of the domain.</string>
+    <string name="FINGERPRINT_VERIFICATION_FAILED_A_en">B001-00017: Fingerprint verification is failed.</string>
+    <string name="USER_HAS_NO_IP_ADDRESS_en">B001-00018: The user has no IP.</string>
+    <string name="UNUATHORIZED_ACCESS_ERROR_CODE_en">B010-00001: You are not authorized to perform this operation.</string>
+    <string name="INVALID_TOKEN_ERROR_CODE_en">B010-00002: The authentication token that was sent with the request is not valid.</string>
+    <string name="TOKEN_NOT_PROVIDED_en">B010-00003: The request has no authentication token.</string>
+    <string name="INVALID_SAMIS_ID__NUMBER_en">B004-00001: Invalid samis id.</string>
+    <string name="PERSON_INFORMATION_NOT_FOUND_en">B004-00002: Person information not found.</string>
+    <string name="FACE_IMAGE_NOT_FOUND_en">B004-00003: Face image not found in the system.</string>
+    <string name="NO_FACE_IMAGE_FOUND_en">B003-0018: Face image not found in the system.</string>
+    <string name="INVALID_OR_MISSING_FACE_IMAGE_en">B003-00001: Invalid or missing face image.</string>
+    <string name="FACE_SEARCH_HAS_NO_HIT_en">B003-00002: Face search has no match in the database.</string>
+    <string name="PERSON_INFORMATION_NOT_FOUND_FOR_HIT_RESULT_en">B003-00003: Person information not found in all results.</string>
+    <string name="AFFECTED_CRIMINAL_RECORD_NUMBERS_EXCEEDED_en">B003-00004: Number of criminal records for this person exceeds the limit.</string>
+    <string name="FINGERPRINT_VERIFICATION_FAILED_en">B003-0005: Fingerprint verification is failed.</string>
+    <string name="INVALID_FINGER_STRUCTURE_en">B003-0006: Invalid finger structure.</string>
+    <string name="NO_PERSON_INFORMATION_FOUND_en">B003-0008: Person information not found.</string>
+    <string name="NO_FINGERPRINTS_FOUND_A_en">B003-0007: Fingerprints not found.</string>
+    <string name="NO_FINGERPRINTS_FOUND_en">B001-00019: Fingerprints not found.</string>
+    <string name="NO_STATUS_FOUND_FOR_INQUIRY_ID_en">B003-0009: No status found for the inquiry</string>
+    <string name="INVALID_FINGERPRINT_PRESENCE_en">B003-0010: Invalid fingerprint presence.</string>
+    <string name="FACE_IMAGE_RESIZE_FAILED_en">B003-0011: FACE_IMAGE_RESIZE_FAILED</string>
+    <string name="FACE_IMAGE_SIZE_EXCEEDED_LIMIT_en">B003-0012: FACE_IMAGE_SIZE_EXCEEDED_LIMIT </string>
+    <string name="FACE_IMAGE_COMPRESSION_FAILED_en">B003-0013: FACE_IMAGE_COMPRESSION_FAILED</string>
+    <string name="FACE_VERIFICATION_DOES_NOT_MATCH_en">B003-0021: Face verification has no match in the database.</string>
+
+    <string name="FACE_VERIFICATION_NO_FACE_en">B003-0022: The photo contains no face.</string>
+    <string name="FACE_VERIFICATION_MULTIPLE_FACES_en">B003-0023: The photo contains multiple faces.</string>
+
+
+    <string name="NO_DEAD_PERSON_INFO_FOUND_en">B003-0024: Dead person information not found.</string>
+    <string name="DEAD_PERSON_ENROLLMENT_FAILED_en">B003-0025: Dead person enrollment failed.</string>
+    <string name="DEAD_PERSON_NO_BARCODE_FOUND_en">B003-0027: Barcode not found for the dead person.</string>
+    <string name="INVALID_DEAD_PERSON_JSON_STRUCTURE_en">B003-0028: Invalid Json structure for the dead person.</string>
+    <string name="DEAD_PERSON_BARCODE_ID_ALREADY_EXIST_en">B003-0029: Dead person barcode already exist.</string>
+
+
+    <string name="STATUS_INQUIRY_NOHIT_en">Fingerprint identification has no match in the database.</string>
+
+    <string name="UNKNOWN_en">Unknown</string>
+    <string name="failed_to_get_person_details_en">Failed to get person details</string>
+    <string name="failed_to_get_person_basic_info_en">Failed to get person basic information</string>
+
+    <string name="session_timeout_en">Session timed out</string>
+
+    <string name="status_2_en">Status : Status Pending</string>
+    <string name="status_3_en">Status : Status Hit</string>
+    <string name="status_4_en">Status : Status Error</string>
+    <string name="status_6_en">Status : Status Deleted</string>
+    <string name="status_22_en">Status : Status Processing later</string>
+    <string name="status_5_en">Status : Status Visual</string>
+
+    <string name="date_en">Date</string>
+
+    <string name="enrollment_pending_en">Enrollment Pending</string>
+    <string name="identification_pending_en">Identification Pending</string>
+    <string name="enrollment_taking_time_msg_en">Enrollment submission is taking time.please check pending transaction after few seconds</string>
+    <string name="identification_taking_time_msg_en">Identification is taking time.please check pending transaction after few seconds</string>
+    <string name="show_details_en"><u>Show Details</u></string>
+
+    <string name="no_pending_transactions_en">No pending transactions</string>
+
+    <string name="pending_en">Pending</string>
+    <string name="completed_en">Completed</string>
+
+
+    <string name="click_here_to_capture_en">Click here to capture</string>
+    <string name="click_here_to_open_camera_en">Click here to open camera</string>
+    <string name="language_en">English</string>
+
+    <string name="check_pending_transactions_en">Check Pending Transactions</string>
+    <string name="check_pending_transactions">الاستعلام عن العمليات المعلقة</string>
+
+    <string name="exit_en">Exit</string>
+    <string name="NO_FACE_DETECTED_en">No face is detected!</string>
+    <string name="YAW_ERROR_en">The face is not centered horizontally (yaw-axis)!</string>
+    <string name="PITCH_ERROR_en">The face is not centered vertically (pitch-axis)!</string>
+    <string name="ROLL_ERROR_en">The face is tilted (roll-axis)!</string>
+    <string name="SHADOW_ERROR_en">There is a shadow!</string>
+    <string name="RIGHT_EYE_CLOSED_en">The right eye is closed!</string>
+    <string name="LEFT_EYE_CLOSED_en">The left eye is closed!</string>
+    <string name="EYE_GAZE_ERROR_en">The eyes are not looking at the camera!</string>
+    <string name="MULTIPLE_FACES_DETECTED_en">Multiple faces are detected!</string>
+    <string name="DISPOSED_en">DISPOSED</string>
+    <string name="recapture_face_en">Failed to compress the face image.please re capture face</string>
+
+
+    <string name="english_icon_text">En</string>
+    <string name="add_violation_en">Add Violation</string>
+    <string name="add_violation_prompt_en">Are you sure you want add this person to hajj violations ?</string>
+    <string name="cancel_msg_en">Are you sure you want to Cancel ?</string>
+
+    <string name="birthCity_en">Birth City</string>
+
+
+    <string name="hoh">HOH</string>
+    <string name="hoh_en">HOH</string>
+    <string name="idRenewDate_en">ID RenewDate</string>
+    <string name="birthCountry_en">Birth Country</string>
+    <string name="dead_en">Dead</string>
+    <string name="birthPlace_en">Birth Place</string>
+    <string name="wantedBy_en">Wanted by</string>
+    <string name="action_to_be_taken_en">Action to be taken</string>
+    <string name="wanted_en">Wanted</string>
+    <string name="coming_soon_en">Will be available soon</string>
+
+    <string name="yes_en">Yes</string>
+    <string name="no_en">No</string>
+    <string name="face_verification_failed_en">Face verification failed</string>
+    <string name="failed_to_get_available_fingers_en">Failed to get available fingers</string>
+    <string name="fingers_availability_failed_en">Fingerprint Availability check</string>
+
+    <string name="person_not_enrolled_en">Person not enrolled !</string>
+    <string name="no_match_en">No Match</string>
+
+    <string name="action1_en">Should be arrested</string>
+    <string name="action2_en">Stop services</string>
+    <string name="action3_en">Should contact the authorities</string>
+    <string name="action4_en">Travel ban</string>
+    <string name="enroll_en">Enroll</string>
+    <string name="enroll">تسجيل</string>
+
+    <integer-array name="fingerPositions_identify">
+        <item>2</item>
+        <item>3</item>
+        <item>7</item>
+        <item>8</item>
+    </integer-array>
+    <integer-array name="fingerPositions_watson_mini">
+        <item>1</item>
+        <item>23</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>78</item>
+        <item>9</item>
+        <item>10</item>
+    </integer-array>
+    <string-array name="camera_permission">
+        <item>android.permission.CAMERA</item>
+    </string-array>
+    <string-array name="location_permission">
+        <item>android.permission.ACCESS_FINE_LOCATION</item>
+        <item>android.permission.ACCESS_COARSE_LOCATION</item>
+    </string-array>
+    <string-array name="write_external_storage_permission">
+        <item>android.permission.WRITE_EXTERNAL_STORAGE</item>
+    </string-array>
+    <string-array name="all_permissions">
+        <item>android.permission.WRITE_EXTERNAL_STORAGE</item>
+        <item>android.permission.CAMERA</item>
+        <item>android.permission.ACCESS_FINE_LOCATION</item>
+        <item>android.permission.ACCESS_COARSE_LOCATION</item>
+    </string-array>
+
+    <string name="isOut">حالة الشخص</string>
+    <string name="isOut_en">Person Status</string>
+
+    <string name="isOut_value_yes">خارج المملكة</string>
+    <string name="isOut_value_yes_en">Outside Kingdom</string>
+
+    <string name="isOut_value_no">داخل المملكة</string>
+    <string name="isOut_value_no_en">Inside Kingdom</string>
+
+    <string name="isOut_value_na">غير معروف</string>
+    <string name="isOut_value_na_en">Not Available</string>
+
+    <string name="no_fingers">لا يوجد بصمات أصابع لهذا الشخص</string>
+    <string name="no_fingers_en">Fingers not available for the person</string>
+    <string name="captured_face_en">Captured Face</string>
+    <string name="original_face_en">Original Face</string>
+    <string name="back">رجوع</string>
+    <string name="back_en">Back</string>
+
+    <string name="scan_barcode">اقرأ الباركود</string>
+    <string name="scan_barcode_en">Scan Barcode</string>
+
+    <string name="barcode_hint_text">امسح أو ادخل رقم الباركود</string>
+    <string name="barcode_hint_text_en">Enter barcode number or Scan</string>
+
+    <string name="click_here_to_scan">اضغط هنا للمسح</string>
+    <string name="click_here_to_scan_en">Click here to scan</string>
+
+
+    <string name="enroll_submit_confirmation">هل انت متأكد بالقيام بعملية التسجيل؟</string>
+    <string name="enroll_submit_confirmation_en">Are you sure you want to submit this enrollment ? </string>
+
+    <string name="confirmation">التأكيد</string>
+    <string name="confirmation_en">Confirmation</string>
+
+
+    <string name="no_permit">لا يوجد تصريح</string>
+
+    <string name="not_available">غير معروف</string>
+    <string name="not_available_en">Not Available</string>
+
+    <string name="has_valid_permit">المقيم لديه تصريح حج</string>
+    <string name="has_valid_permit_en">Valid Permit</string>
+
+    <string name="has_no_permit_en">No Permit</string>
+    <string name="has_no_permit"> لا يوجد لدى المقيم تصريح حج</string>
+
+    <string name="eligible_for_hajj">مسموح له الحج هذا العام</string>
+    <string name="eligible_for_hajj_en">Eligible for Hajj</string>
+
+    <string name="not_eligible_for_hajj">غير مسموح له الحج هذا العام</string>
+    <string name="not_eligible_for_hajj_en">Not eligible for Hajj</string>
+
+
+    <string name="prompt_visitor_id">أدخل هوية المراجع</string>
+    <string name="prompt_visitor_id_en">Enter visitor id number</string>
+
+    <string name="visit_purpose">غرض المراجعة</string>
+    <string name="visit_purpose_en">Visit purpose</string>
+
+    <string name="visiting_person_name">اسم الشخص الذي سيزوره</string>
+    <string name="visiting_person_name_en">Name of the person you are visiting</string>
+
+    <string name="visiting_person_id">هوية الشخص الذي سيزوره</string>
+    <string name="visiting_person_id_en">ID of the person you are visiting</string>
+
+    <string name="department">الإدارة التي سيزورها</string>
+    <string name="department_en">Visiting Department</string>
+
+    <string name="prompt_sector">المواقع</string>
+    <string name="prompt_sector_en">Select sectors</string>
+
+    <string name="morajae3">التالي</string>
+    <string name="morajae3_en">Next</string>
+
+
+    <!--New Morajae Fragment (Verify the permit number-->
+    <string name="passport_id">رقم الجواز</string>
+    <string name="passport_id_en">Enter passport number</string>
+    <string name="prompt_id_or_passport_id">أدخل رقم الهوية أو الجواز</string>
+    <string name="prompt_id_or_passport_id_en">Enter id number</string>
+    <string name="morajae_nationality">الجنسية</string>
+    <string name="morajae_nationality_en">Enter nationality</string>
+    <string name="morajae_permitbtn">تحقق من البصمة</string>
+    <string name="morajae_permitbtn_en">Verify fingerprint</string>
+
+
+    <string name="visit_purpose_required">هدف الزيارة مطلوب</string>
+    <string name="visit_purpose_required_en">Visit purpose required</string>
+
+    <string name="visit_name_required">Visit name required</string>
+    <string name="visit_name_required_en">Visit name required</string>
+
+    <string name="required_fields">اسم الزائر مطلوب</string>
+    <string name="required_fields_en">Visiting person name is required</string>
+
+    <string name="register_success">تم التسجيل بنجاح</string>
+    <string name="register_success_en">Submission Successful</string>
+
+    <string name="register_failed">التسجيل فشل</string>
+    <string name="register_failed_en">Submission Failed</string>
+
+    <string name="failed_to_check_hajj_eligibility">فشل في التحقق من تصريح الحج</string>
+    <string name="failed_to_check_hajj_eligibility_en">Failed to check hajj eligibility</string>
+
+    <string name="failed_to_add_violation">فشل اضافة مخالف</string>
+    <string name="failed_to_add_violation_en">Failed to add violation</string>
+
+    <string name="hajj_violations">مخالفات الحج</string>
+    <string name="hajj_violations_en">Hajj violations</string>
+
+    <string name="violations_number">رقم مخالفة الحج  </string>
+    <string name="violations_number_en">Hajj violations  number  </string>
+
+    <string name="enter_resident_id">ادخل رقم المقيم</string>
+    <string name="enter_resident_id_en">Enter Resident id number</string>
+
+    <string name="device_not_found">جهاز قارئ البصمات غير متصل!</string>
+    <string name="device_not_found_en">Device not connected!</string>
+
+
+    <string name="retry">إعادة المحاولة</string>
+    <string name="retry_en">Retry</string>
+    <string name="check_permit">التحقق من التصريح</string>
+    <string name="check_permit_en">Check Permit</string>
+
+
+    <string name="morajae_check_permit_failed">خطأ في عملية التحقق من المراجع</string>
+    <string name="morajae_check_permit_failed_en">Failed to check morajae permit</string>
+
+
+    <string name="is_permit_expired">التصريح منتهي</string>
+    <string name="is_permit_expired_en">Is permit Expired</string>
+
+    <string name="permit_status">حالة التصريح</string>
+    <string name="permit_status_en">Permit Status</string>
+
+    <string name="permit_number">رقم التصريح</string>
+    <string name="permit_number_en">Permit Number</string>
+
+    <string name="start_date">تاريخ البداية</string>
+    <string name="start_date_en">Start Date</string>
+
+    <string name="end_date">تاريخ النهاية</string>
+    <string name="end_date_en">End Date</string>
+
+    <string name="permit_dept">الإدارة</string>
+    <string name="permit_dept_en">Permit Department</string>
+
+    <string name="permit_desc">تفاصيل أخرى</string>
+    <string name="permit_desc_en">Permit Description</string>
+
+    <string name="purpose">الغرض من الزيارة</string>
+    <string name="purpose_en">Purpose</string>
+
+    <string name="visited_person_name">الشخص المراد زيارته</string>
+    <string name="visited_person_name_en">Visited Person Name</string>
+
+    <string name="sectors_info">المواقع المصرح له</string>
+    <string name="sectors_info_en">Sector Information</string>
+
+    <string name="permitted_persons">الأشخاص المضافين في التصريح</string>
+    <string name="permitted_persons_en">Permitted Persons</string>
+
+    <string name="person_type">نوع الشخص</string>
+    <string name="person_type_en">Person Type</string>
+
+    <string name="name">الأسم</string>
+    <string name="name_en">Name</string>
+
+    <string name="sector_id">رقم الموقع</string>
+    <string name="sector_id_en">Sector Id</string>
+
+    <string name="sector_name">المواقع</string>
+    <string name="sector_name_en">Sector Name</string>
+
+    <string name="select_country">اختر الدولة</string>
+    <string name="select_country_en">Select Country</string>
+
+    <string name="failed_to_get_samis">خطأ في استراجع معلومات الهوية من رقم الجواز.</string>
+    <string name="failed_to_get_samis_en">Failed to get samis id from passport Number</string>
+
+
+    <string name="approved">مقبول</string>
+    <string name="approved_en">Approved</string>
+
+    <string name="morajae_permit_not_found_text">هل تريد تسجيله كـ مراجع ؟ </string>
+    <string name="morajae_permit_not_found_text_en">Are you sure you want to add this person as morajae ? </string>
+
+    <string name="register">تسجيل</string>
+    <string name="register_en">Register</string>
+
+    <string name="permit_expired">تصريح منتهي</string>
+    <string name="permit_expired_en">Permit Expired</string>
+
+    <string name="permit_not_found">لا يوجد تصريح </string>
+    <string name="permit_not_found_en">Permit not found</string>
+
+    <string name="permitted_info">معلومات التصريح</string>
+    <string name="permitted_info_en">Permit Information</string>
+
+    <string name="valid_permit">تصريح صالح</string>
+    <string name="valid_permit_en">Valid Permit</string>
+
+    <string name="person_info">معلومات الشخص</string>
+    <string name="person_info_en">Person Information</string>
+
+    <string name="invalid_country">Invalid Country</string>
+    <string name="invalid_country_en">Invalid Country</string>
+
+    <string name="wanted_info">معلومات عن المطلوب</string>
+    <string name="wanted_info_en">Wanted Information</string>
+
+    <string name="select_all">تحديد كل المواقع</string>
+    <string name="select_all_en">Select All</string>
+
+    <string name="failed_to_load_sectors">فشل في اظهار المواقع</string>
+    <string name="failed_to_load_sectors_en">Failed to load access points</string>
+
+    <string-array name="orderedMenus">
+        <item>menu.verification.fingerprint</item>
+        <item>menu.verification.face</item>
+        <item>menu.inquiry.fingerprint</item>
+        <item>menu.inquiry.face</item>
+        <item>menu.inquiry.deadPersons</item>
+        <item>menu.securityClearance.fingerprint</item>
+        <item>menu.securityClearance.face</item>
+        <item>menu.securityClearance.fingerprintInquiry</item>
+        <item>menu.enrollment.citizen</item>
+        <item>menu.morajae.registerMorajae</item>
+        <item>menu.morajae.morajaePermit</item>
+        <item>menu.hajj.hajjPermit</item>
+        <item>menu.pendingTransactions</item>
+        <item>menu.logout</item>
+    </string-array>
+
+    <string name="failed_to_get_lookups">تعذر تحميل القائمة</string>
+    <string name="failed_to_get_lookups_en">Failed to get menu lookups</string>
+    <string name="title_activity_login2">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

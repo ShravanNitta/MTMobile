@@ -1,0 +1,18 @@
+{
+  "version": "2.0",
+  "contract": {
+    "customer": "WM_NIC",
+    "products": [
+      "ansi_iso",
+      "iface"
+    ],
+    "idkit": {
+      "max_client_connections": 0,
+      "database_size": 0
+    },
+    "hwids": [
+      "AHZYnMomb7kxyiID"
+    ],
+    "signature": "BEUlU8OgEDd174xC4ChMpnRe+Jeim7wHoqxVk6mu7h4oZ4O7R4CRkW0HrZQ/DF/gFIxy3a9OiLFzYdPhCpi6AkIdxMBC/AXkg7olflPPHJp+U3rdnv71w95s5PYrwbqwWN0iTBaNQR7RZHvq1fdegR1nx4e0Uu8BzaeTvdQw/O8="
+  }
+}

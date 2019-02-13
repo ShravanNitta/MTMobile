@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000ff" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dialog_left_hand_layout_left_hand"
+        android:layout_width="281dp"
+        android:layout_height="375dp"
+        android:background="@drawable/lh_icon_big"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:id="@+id/dialog_left_hand_image_left_little"
+                android:layout_width="40dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="70dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp">
+
+            <ImageView
+                android:id="@+id/dialog_left_hand_image_left_ring"
+                android:layout_width="40dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp">
+
+            <ImageView
+                android:id="@+id/dialog_left_hand_image_left_middle"
+                android:layout_width="40dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp">
+
+            <ImageView
+                android:id="@+id/dialog_left_hand_image_left_index"
+                android:layout_width="40dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="23dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:id="@+id/dialog_left_hand_image_left_thumb"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="140dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+

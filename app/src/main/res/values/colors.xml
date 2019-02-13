@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/mt1</color>
+    <color name="colorPrimaryDark">@color/primary_bar</color>
+    <color name="colorAccent">@color/colorPrimaryDark</color>
+    <color name="primary_bar">#fa7f03</color>
+    <color name="spinner_background">@color/white</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#1d9c20</color>
+    <color name="dark_gray">#434543</color>
+    <color name="gray">#828282</color>
+    <color name="light_gray">#dcd7d7</color>
+    <color name="red">#ff0000</color>
+    <color name="light_red">#e44848</color>
+    <color name="confirmation_buttons">#20a1ec</color>
+    <color name="gold_color">#A58A4F</color>
+    <color name="hint_text_color">#808080</color>
+
+    <color name="mt">#ED5621</color>
+    <color name="mt1">#233b89</color>
+    <color name="yellow">#fde213</color>
+    <color name="sc_color">#09c196</color>
+    <color name="buttons">#9ccf31</color>
+    <color name="toolbarColor">#FFB200</color>
+
+    <color name="toolbarColor2">#31b945</color>
+
+
+    <color name="home_bg">#fcfcfc</color>
+    <color name="rani">#D62027</color>
+
+
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.matching.tech.bio.activities.LoginActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/light_gray"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="5dp"
+                android:gravity="left"
+                android:hint="Username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/light_gray"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/liveView"
+                android:textColor="@color/colorPrimaryDark"
+                android:visibility="visible"
+                android:textSize="13dp"/>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/hand_selection"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/left_hand_selection"
+                        android:layout_width="90dp"
+                        android:layout_height="119dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/lh_icon_big" />
+                    <ImageView
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/right_hand_selection"
+                        android:layout_width="90dp"
+                        android:layout_height="119dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/rt_icon_big" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/capturedImage"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="79dp"
+                    android:layout_height="99dp"
+                    android:visibility="gone"
+                    android:padding="5dp"
+                    android:background="@drawable/box_background_gold"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <Button
+                android:id="@+id/scan"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_colorprimary"
+                android:text="@string/scan_en"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
